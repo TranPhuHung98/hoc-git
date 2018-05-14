@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:stretchColumns="*"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <TableRow>
+
+        <TextView
+            android:text="@string/h_ng"
+            android:textSize="30sp" />
+
+        <TextView
+            android:text="@string/tr_n"
+            android:textSize="30sp" />
+
+        <TextView android:text="@string/ph" />
+
+        <TextView android:text="@string/phuhung" />
+    </TableRow>
+
+    <TextView
+        android:gravity="center"
+        android:text="@string/abcdde"
+        android:textSize="30sp" />
+    <FrameLayout>
+        <ImageView
+            android:src="@drawable/anh1"
+            android:layout_width="200sp"
+            android:layout_height="120sp" />
+
+        <ImageView
+            android:src="@drawable/anh3"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:text="chữ chèn rồi"
+            android:layout_width="50sp"
+            android:layout_height="50sp" />
+    </FrameLayout>
+    <RelativeLayout>
+        <TextView
+            android:text="Relative layout"
+            android:id="@+id/tvr"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:id="@+id/pink"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/tvr"
+            android:src="@color/colorAccent" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toEndOf="@+id/pink"
+            android:src="@color/colorPrimaryDark" />
+    </RelativeLayout>
+</TableLayout>
