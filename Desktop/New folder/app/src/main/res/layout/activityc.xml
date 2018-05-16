@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:stretchColumns="*"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableRow>
+        <TextView android:text="@string/h_ng"
+            android:id="@+id/TV1"
+            android:textSize="30dp"
+            android:layout_span="4"
+            android:layout_gravity="center"
+
+            />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="dòng 2"
+            android:id="@+id/TV2"
+            android:textSize="30dp"/>
+        <TextView
+            android:text="cột 2"
+            android:id="@+id/TV3"
+            android:textSize="30dp" />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="cột 1"
+            android:id="@+id/TV4"
+            android:textSize="30dp"/>
+        <TextView android:text="cột 2"
+            android:id="@+id/TV5"
+            android:textSize="30dp"/>
+        <TextView android:text="cột 3"
+            android:id="@+id/TV6"
+            android:textSize="30dp"/>
+        <TextView android:text="cột 4"
+            android:id="@+id/TV7"
+            android:textSize="30dp"/>
+    </TableRow>
+    <TableRow>
+        <Button android:text="Chuyen sang layout khac"
+            android:layout_span="4"
+            android:id="@+id/bttb"
+            android:layout_height="80dp"/>
+    </TableRow>
+</TableLayout>
