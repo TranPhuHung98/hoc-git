@@ -1,66 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout
-    android:stretchColumns="*"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".MainActivity">
+    android:stretchColumns="*"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
-    <TableRow>
-
-        <TextView
-            android:text="@string/h_ng"
-            android:textSize="30sp" />
-
-        <TextView
-            android:text="@string/tr_n"
-            android:textSize="30sp" />
-
-        <TextView android:text="@string/ph" />
-
-        <TextView android:text="@string/phuhung" />
-    </TableRow>
-
-    <TextView
-        android:gravity="center"
-        android:text="@string/abcdde"
-        android:textSize="30sp" />
-    <FrameLayout>
-        <ImageView
-            android:src="@drawable/anh1"
-            android:layout_width="200sp"
-            android:layout_height="120sp" />
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="37dp">
 
         <ImageView
-            android:src="@drawable/anh3"
-            android:layout_width="100dp"
-            android:layout_height="100dp" />
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv2"-->
+            <!--android:layout_width="50sp"-->
+            <!--android:layout_height="50sp"-->
+            <!--android:src="@drawable/anh4" />-->
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:text="bấm để chuyển layout" />
+
         <TextView
-            android:text="chữ chèn rồi"
             android:layout_width="50sp"
-            android:layout_height="50sp" />
+            android:layout_height="50sp"
+            android:text="chữ chèn rồi"
+            android:textColor="#ff00" />
+
     </FrameLayout>
-    <RelativeLayout>
-        <TextView
-            android:text="Relative layout"
-            android:id="@+id/tvr"
-            android:layout_width="50dp"
-            android:layout_height="50dp" />
 
-        <ImageView
-            android:id="@+id/pink"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_toRightOf="@+id/tvr"
-            android:src="@color/colorAccent" />
-
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_toEndOf="@+id/pink"
-            android:src="@color/colorPrimaryDark" />
-    </RelativeLayout>
-</TableLayout>
+</android.support.constraint.ConstraintLayout>
